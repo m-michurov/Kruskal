@@ -24,7 +24,8 @@ int main(
     Edge * edge;
 
     int src_set = 0,
-        dst_set = 0;
+        dst_set = 0,
+        merge_count = 0;
 
     if (scanf("%d", &vertices) == EOF) LINE_NUM_ERROR;
     if (scanf("%d", &edges) == EOF) LINE_NUM_ERROR;
@@ -50,14 +51,18 @@ int main(
 
         if (src_set != dst_set) {
             MergeSets(set_union, src_set, dst_set);
+            merge_count++;
             QueuePush(spannig_tree_queue, edge, 0);
         }
     }
 
     DestroySets(set_union);
 
-    if (QueueIsEmpty(spannig_tree_queue))
+    if ((QueueIsEmpty(spannig_tree_queue) || merge_count < vertices - 1) && !(edges == 0 && vertices == 1)) { // убейте меня за этот костыль
         puts("no spanning tree");
+        return 0;
+    }
+
 
     while (!QueueIsEmpty(spannig_tree_queue)) {
         edge = (Edge *)QueueGet(spannig_tree_queue);
