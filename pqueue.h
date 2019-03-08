@@ -2,6 +2,7 @@
 
 #ifndef KRUSKAL_PQUEUE_H
 #define KRUSKAL_PQUEUE_H
+
 #include <malloc.h>
 #include <stdlib.h>
 
@@ -9,10 +10,9 @@
 
 typedef struct st_QueueNode QueueNode;
 
-// A queue node
 struct st_QueueNode
 {
-    unsigned int priority;
+    int priority;
 
     void * data;
 

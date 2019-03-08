@@ -6,9 +6,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifndef MEM_ERROR
-#define MEM_ERROR           {puts("Error: unable to allocate memory");  exit(EXIT_SUCCESS);}
-#endif
+#define MEM_CHECK(pointer) {if (pointer == NULL) {puts("Error: unable to allocate memory"); exit(EXIT_SUCCESS);}}
+
+#define PARAMETERS_ERROR {puts("invalid parameters values"); exit(EXIT_SUCCESS);};
 
 #define VERTEX_NUM_ERROR    {puts("bad number of vertices");    exit(EXIT_SUCCESS);}
 #define EDGE_NUM_ERROR      {puts("bad number of edges");       exit(EXIT_SUCCESS);}

@@ -3,10 +3,11 @@
 #ifndef KRUSKAL_GRAPH_H
 #define KRUSKAL_GRAPH_H
 
-#include "pqueue.h"
+#include "errors.h"
 
 typedef struct {
-    short ends[2];
+    short src;
+    short dst;
 } Edge;
 
 Edge * newEdge(

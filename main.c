@@ -26,26 +26,27 @@ int main(
     int src_set = 0,
         dst_set = 0;
 
-    if (scanf("%d", &edges) == EOF) LINE_NUM_ERROR;
     if (scanf("%d", &vertices) == EOF) LINE_NUM_ERROR;
-    if (!(edges > -1 && edges < 1001)) VERTEX_NUM_ERROR;
-    if (!(vertices > -1 && vertices < (edges - 1) * edges / 2 + 1)) EDGE_NUM_ERROR;
+    if (scanf("%d", &edges) == EOF) LINE_NUM_ERROR;
 
-    for (size_t k = 0; k < vertices; k++) {
+    if (!(vertices >= 0 && vertices <= 5000)) VERTEX_NUM_ERROR;
+    if (!(edges >= 0 && edges <= (vertices - 1) * vertices / 2)) EDGE_NUM_ERROR;
+
+    for (size_t k = 0; k < edges; k++) {
         if (scanf("%d %d %d", &src, &dst, &weight) == EOF) LINE_NUM_ERROR;
 
-        if (!(src > 0 && src < edges + 1) || !(dst > 0 && dst < edges + 1)) VERTEX_INPUT_ERROR;
+        if (!(src > 0 && src < vertices + 1) || !(dst > 0 && dst < vertices + 1)) VERTEX_INPUT_ERROR;
         if (!(weight >= 0 && weight <= INT_MAX)) LEN_INPUT_ERROR;
 
         QueuePush(edge_queue, newEdge((short)src, (short)dst), weight);
     }
 
-    set_union = MakeSets((size_t)vertices);
+    set_union = MakeSets((size_t)vertices + 1);
 
     while (!QueueIsEmpty(edge_queue)) {
-        edge = (Edge *)QueueGet(edge_queue);
-        src_set = FindSet(set_union, edge->ends[0]);
-        dst_set = FindSet(set_union, edge->ends[1]);
+        edge = QueueGet(edge_queue);
+        src_set = FindSet(set_union, edge->src);
+        dst_set = FindSet(set_union, edge->dst);
 
         if (src_set != dst_set) {
             MergeSets(set_union, src_set, dst_set);
@@ -60,7 +61,7 @@ int main(
 
     while (!QueueIsEmpty(spannig_tree_queue)) {
         edge = (Edge *)QueueGet(spannig_tree_queue);
-        printf("%d %d\n", edge->ends[0], edge->ends[1]);
+        printf("%d %d\n", edge->src, edge->dst);
     }
 
     return 0;

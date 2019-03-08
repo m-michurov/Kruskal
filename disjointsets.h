@@ -5,6 +5,8 @@
 
 #include <stdlib.h>
 
+#include "errors.h"
+
 typedef struct {
     int * parent;
     int * rank;
