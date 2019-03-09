@@ -89,13 +89,19 @@
 		<Unit filename="E:/CLionProjects/Kruskal/graph.h">
 			<Option target="Kruskal"/>
 		</Unit>
+		<Unit filename="E:/CLionProjects/Kruskal/kruskal.c">
+			<Option target="Kruskal"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/Kruskal/kruskal.h">
+			<Option target="Kruskal"/>
+		</Unit>
 		<Unit filename="E:/CLionProjects/Kruskal/main.c">
 			<Option target="Kruskal"/>
 		</Unit>
-		<Unit filename="E:/CLionProjects/Kruskal/pqueue.c">
+		<Unit filename="E:/CLionProjects/Kruskal/qsort.c">
 			<Option target="Kruskal"/>
 		</Unit>
-		<Unit filename="E:/CLionProjects/Kruskal/pqueue.h">
+		<Unit filename="E:/CLionProjects/Kruskal/qsort.h">
 			<Option target="Kruskal"/>
 		</Unit>
 		<Unit filename="E:/CLionProjects/Kruskal/CMakeLists.txt">

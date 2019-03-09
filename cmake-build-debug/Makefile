@@ -176,6 +176,33 @@ graph.c.s:
 	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/graph.c.s
 .PHONY : graph.c.s
 
+kruskal.obj: kruskal.c.obj
+
+.PHONY : kruskal.obj
+
+# target to build an object file
+kruskal.c.obj:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/kruskal.c.obj
+.PHONY : kruskal.c.obj
+
+kruskal.i: kruskal.c.i
+
+.PHONY : kruskal.i
+
+# target to preprocess a source file
+kruskal.c.i:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/kruskal.c.i
+.PHONY : kruskal.c.i
+
+kruskal.s: kruskal.c.s
+
+.PHONY : kruskal.s
+
+# target to generate assembly for a file
+kruskal.c.s:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/kruskal.c.s
+.PHONY : kruskal.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -203,32 +230,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/main.c.s
 .PHONY : main.c.s
 
-pqueue.obj: pqueue.c.obj
+qsort.obj: qsort.c.obj
 
-.PHONY : pqueue.obj
+.PHONY : qsort.obj
 
 # target to build an object file
-pqueue.c.obj:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/pqueue.c.obj
-.PHONY : pqueue.c.obj
+qsort.c.obj:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/qsort.c.obj
+.PHONY : qsort.c.obj
 
-pqueue.i: pqueue.c.i
+qsort.i: qsort.c.i
 
-.PHONY : pqueue.i
+.PHONY : qsort.i
 
 # target to preprocess a source file
-pqueue.c.i:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/pqueue.c.i
-.PHONY : pqueue.c.i
+qsort.c.i:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/qsort.c.i
+.PHONY : qsort.c.i
 
-pqueue.s: pqueue.c.s
+qsort.s: qsort.c.s
 
-.PHONY : pqueue.s
+.PHONY : qsort.s
 
 # target to generate assembly for a file
-pqueue.c.s:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/pqueue.c.s
-.PHONY : pqueue.c.s
+qsort.c.s:
+	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/qsort.c.s
+.PHONY : qsort.c.s
 
 # Help Target
 help:
@@ -245,12 +272,15 @@ help:
 	@echo ... graph.obj
 	@echo ... graph.i
 	@echo ... graph.s
+	@echo ... kruskal.obj
+	@echo ... kruskal.i
+	@echo ... kruskal.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... pqueue.obj
-	@echo ... pqueue.i
-	@echo ... pqueue.s
+	@echo ... qsort.obj
+	@echo ... qsort.i
+	@echo ... qsort.s
 .PHONY : help
 
 

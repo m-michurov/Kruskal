@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Kruskal.dir/main.c.obj"
   "CMakeFiles/Kruskal.dir/graph.c.obj"
-  "CMakeFiles/Kruskal.dir/pqueue.c.obj"
   "CMakeFiles/Kruskal.dir/disjointsets.c.obj"
+  "CMakeFiles/Kruskal.dir/qsort.c.obj"
+  "CMakeFiles/Kruskal.dir/kruskal.c.obj"
   "Kruskal.pdb"
   "Kruskal.exe"
   "Kruskal.exe.manifest"

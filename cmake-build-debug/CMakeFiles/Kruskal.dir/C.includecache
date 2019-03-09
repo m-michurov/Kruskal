@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+E:/CLionProjects/Kruskal/disjointsets.c
+disjointsets.h
+E:/CLionProjects/Kruskal/disjointsets.h
+
 E:/CLionProjects/Kruskal/disjointsets.h
 stdlib.h
 -
@@ -18,9 +22,23 @@ stdio.h
 stdlib.h
 -
 
+E:/CLionProjects/Kruskal/graph.c
+graph.h
+E:/CLionProjects/Kruskal/graph.h
+
 E:/CLionProjects/Kruskal/graph.h
 errors.h
 E:/CLionProjects/Kruskal/errors.h
+disjointsets.h
+E:/CLionProjects/Kruskal/disjointsets.h
+
+E:/CLionProjects/Kruskal/kruskal.c
+kruskal.h
+E:/CLionProjects/Kruskal/kruskal.h
+
+E:/CLionProjects/Kruskal/kruskal.h
+qsort.h
+E:/CLionProjects/Kruskal/qsort.h
 
 E:/CLionProjects/Kruskal/main.c
 stdio.h
@@ -29,20 +47,16 @@ errors.h
 E:/CLionProjects/Kruskal/errors.h
 graph.h
 E:/CLionProjects/Kruskal/graph.h
-pqueue.h
-E:/CLionProjects/Kruskal/pqueue.h
-disjointsets.h
-E:/CLionProjects/Kruskal/disjointsets.h
+kruskal.h
+E:/CLionProjects/Kruskal/kruskal.h
 
-E:/CLionProjects/Kruskal/pqueue.c
-pqueue.h
-E:/CLionProjects/Kruskal/pqueue.h
+E:/CLionProjects/Kruskal/qsort.c
+qsort.h
+E:/CLionProjects/Kruskal/qsort.h
 
-E:/CLionProjects/Kruskal/pqueue.h
-malloc.h
--
+E:/CLionProjects/Kruskal/qsort.h
 stdlib.h
 -
-errors.h
-E:/CLionProjects/Kruskal/errors.h
+graph.h
+E:/CLionProjects/Kruskal/graph.h
 

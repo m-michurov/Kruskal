@@ -6,16 +6,27 @@ CMakeFiles/Kruskal.dir/disjointsets.c.obj
  E:/CLionProjects/Kruskal/disjointsets.h
  E:/CLionProjects/Kruskal/errors.h
 CMakeFiles/Kruskal.dir/graph.c.obj
+ E:/CLionProjects/Kruskal/disjointsets.h
  E:/CLionProjects/Kruskal/errors.h
  E:/CLionProjects/Kruskal/graph.c
  E:/CLionProjects/Kruskal/graph.h
+CMakeFiles/Kruskal.dir/kruskal.c.obj
+ E:/CLionProjects/Kruskal/disjointsets.h
+ E:/CLionProjects/Kruskal/errors.h
+ E:/CLionProjects/Kruskal/graph.h
+ E:/CLionProjects/Kruskal/kruskal.c
+ E:/CLionProjects/Kruskal/kruskal.h
+ E:/CLionProjects/Kruskal/qsort.h
 CMakeFiles/Kruskal.dir/main.c.obj
  E:/CLionProjects/Kruskal/disjointsets.h
  E:/CLionProjects/Kruskal/errors.h
  E:/CLionProjects/Kruskal/graph.h
+ E:/CLionProjects/Kruskal/kruskal.h
  E:/CLionProjects/Kruskal/main.c
- E:/CLionProjects/Kruskal/pqueue.h
-CMakeFiles/Kruskal.dir/pqueue.c.obj
+ E:/CLionProjects/Kruskal/qsort.h
+CMakeFiles/Kruskal.dir/qsort.c.obj
+ E:/CLionProjects/Kruskal/disjointsets.h
  E:/CLionProjects/Kruskal/errors.h
- E:/CLionProjects/Kruskal/pqueue.c
- E:/CLionProjects/Kruskal/pqueue.h
+ E:/CLionProjects/Kruskal/graph.h
+ E:/CLionProjects/Kruskal/qsort.c
+ E:/CLionProjects/Kruskal/qsort.h

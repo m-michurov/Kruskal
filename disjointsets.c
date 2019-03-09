@@ -1,5 +1,6 @@
 #include "disjointsets.h"
 
+
 DSU * MakeSets(
         size_t count)
 {
@@ -18,6 +19,7 @@ DSU * MakeSets(
     return dsu;
 }
 
+
 int FindSet(
         DSU * dsu,
         int element)
@@ -29,6 +31,7 @@ int FindSet(
 
     return dsu->parent[element];
 }
+
 
 void MergeSets(
         DSU * dsu,
@@ -46,6 +49,7 @@ void MergeSets(
     if (dsu->rank[setX] == dsu->rank[setY])
         dsu->rank[setY] += 1;
 }
+
 
 void DestroySets(
         DSU * dsu)

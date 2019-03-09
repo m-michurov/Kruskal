@@ -2,7 +2,8 @@
 
 Edge * newEdge(
         short src,
-        short dst)
+        short dst,
+        int length)
 {
     Edge * new_edge = (Edge *)malloc(sizeof(Edge));
 
@@ -10,6 +11,7 @@ Edge * newEdge(
 
     new_edge->src = src;
     new_edge->dst = dst;
+    new_edge->length = length;
 
     return new_edge;
 }
