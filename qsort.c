@@ -2,9 +2,9 @@
 
 
 void QuickSort(
-        Edge **array,
-        int left,
-        int right)
+        Edge ** array,
+        const int left,
+        const int right)
 {
     Edge * tmp;
 

@@ -8,15 +8,13 @@
 int main(
         void)
 {
-    int edges = 0,
-        vertices = 0,
-        src = 0,
-        dst = 0,
-        length = 0;
+    int edges = 0;
+    int vertices = 0;
+    int src = 0;
+    int dst = 0;
+    int length = 0;
 
     Edge ** edge_array;
-
-    size_t edge_array_len = 0;
 
     if (scanf("%d", &vertices) == EOF) LINE_NUM_ERROR;
     if (scanf("%d", &edges) == EOF) LINE_NUM_ERROR;
@@ -35,18 +33,18 @@ int main(
         if (!(src > 0 && src < vertices + 1) || !(dst > 0 && dst < vertices + 1)) VERTEX_INPUT_ERROR;
         if (!(length >= 0 && length <= INT_MAX)) LEN_INPUT_ERROR;
 
-        edge_array[edge_array_len++] = newEdge((short)src, (short)dst, length);
+        edge_array[k] = newEdge((short)src, (short)dst, length);
     }
 
 
-    MakeMinSpanningTree(edge_array, (size_t)vertices, edge_array_len);
+    LeaveOnlyMinSpanningTree(edge_array, (size_t) vertices, (size_t) edges);
 
 
-    for (size_t k = 0; k < edge_array_len; k++)
-        if (edge_array[k] != NULL) {
+    for (size_t k = 0; k < edges; k++) {
+        if (edge_array[k] != NULL)
             printf("%d %d\n", edge_array[k]->src, edge_array[k]->dst);
-            free(edge_array[k]);
-        }
+        free(edge_array[k]);
+    }
 
     free(edge_array);
 

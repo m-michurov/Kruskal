@@ -2,7 +2,7 @@
 
 
 DSU * MakeSets(
-        size_t count)
+        const size_t count)
 {
     DSU * dsu = (DSU *)malloc(sizeof(DSU));
     MEM_CHECK(dsu)
@@ -22,7 +22,7 @@ DSU * MakeSets(
 
 int FindSet(
         DSU * dsu,
-        int element)
+        const int element)
 {
     if (element == dsu->parent[element])
         return element;
@@ -35,8 +35,8 @@ int FindSet(
 
 void MergeSets(
         DSU * dsu,
-        int setX,
-        int setY)
+        const int setX,
+        const int setY)
 {
     if (dsu->parent[setX] != setX || dsu->parent[setY] != setY) PARAMETERS_ERROR
 

@@ -2,9 +2,9 @@
 
 
 Edge * newEdge(
-        short src,
-        short dst,
-        int length)
+        const short src,
+        const short dst,
+        const int length)
 {
     Edge * new_edge = (Edge *)malloc(sizeof(Edge));
 

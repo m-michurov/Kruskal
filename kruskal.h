@@ -5,10 +5,13 @@
 
 #include "qsort.h"
 
-
-void MakeMinSpanningTree(
+// This function DELETES edges that are not
+// part of a minimum spanning tree from
+// the array, frees memory
+// and leaves NULL pointers instead.
+void LeaveOnlyMinSpanningTree(
         Edge ** edge_array,
         size_t vertices,
-        size_t edge_array_len);
+        size_t edges);
 
 #endif
