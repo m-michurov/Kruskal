@@ -1,8 +1,8 @@
 #include "kruskal.h"
 
 
-void LeaveOnlyMinSpanningTree(
-        Edge * edge_array,
+void MarkMinSpanningTree(
+        Edge *edge_array,
         size_t vertices,
         size_t edges)
 {

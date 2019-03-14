@@ -69,22 +69,9 @@ CMakeFiles/Kruskal.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kruskal.dir/main.c.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\CLionProjects\Kruskal(m-michurov)\main.c -o CMakeFiles\Kruskal.dir\main.c.s
 
-CMakeFiles/Kruskal.dir/graph.c.obj: CMakeFiles/Kruskal.dir/flags.make
-CMakeFiles/Kruskal.dir/graph.c.obj: ../graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Kruskal.dir/graph.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Kruskal.dir\graph.c.obj   -c C:\CLionProjects\Kruskal(m-michurov)\graph.c
-
-CMakeFiles/Kruskal.dir/graph.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Kruskal.dir/graph.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\CLionProjects\Kruskal(m-michurov)\graph.c > CMakeFiles\Kruskal.dir\graph.c.i
-
-CMakeFiles/Kruskal.dir/graph.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Kruskal.dir/graph.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\CLionProjects\Kruskal(m-michurov)\graph.c -o CMakeFiles\Kruskal.dir\graph.c.s
-
 CMakeFiles/Kruskal.dir/disjointsets.c.obj: CMakeFiles/Kruskal.dir/flags.make
 CMakeFiles/Kruskal.dir/disjointsets.c.obj: ../disjointsets.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Kruskal.dir/disjointsets.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Kruskal.dir/disjointsets.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Kruskal.dir\disjointsets.c.obj   -c C:\CLionProjects\Kruskal(m-michurov)\disjointsets.c
 
 CMakeFiles/Kruskal.dir/disjointsets.c.i: cmake_force
@@ -97,7 +84,7 @@ CMakeFiles/Kruskal.dir/disjointsets.c.s: cmake_force
 
 CMakeFiles/Kruskal.dir/qsort.c.obj: CMakeFiles/Kruskal.dir/flags.make
 CMakeFiles/Kruskal.dir/qsort.c.obj: ../qsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Kruskal.dir/qsort.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Kruskal.dir/qsort.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Kruskal.dir\qsort.c.obj   -c C:\CLionProjects\Kruskal(m-michurov)\qsort.c
 
 CMakeFiles/Kruskal.dir/qsort.c.i: cmake_force
@@ -110,7 +97,7 @@ CMakeFiles/Kruskal.dir/qsort.c.s: cmake_force
 
 CMakeFiles/Kruskal.dir/kruskal.c.obj: CMakeFiles/Kruskal.dir/flags.make
 CMakeFiles/Kruskal.dir/kruskal.c.obj: ../kruskal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Kruskal.dir/kruskal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Kruskal.dir/kruskal.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Kruskal.dir\kruskal.c.obj   -c C:\CLionProjects\Kruskal(m-michurov)\kruskal.c
 
 CMakeFiles/Kruskal.dir/kruskal.c.i: cmake_force
@@ -124,7 +111,6 @@ CMakeFiles/Kruskal.dir/kruskal.c.s: cmake_force
 # Object files for target Kruskal
 Kruskal_OBJECTS = \
 "CMakeFiles/Kruskal.dir/main.c.obj" \
-"CMakeFiles/Kruskal.dir/graph.c.obj" \
 "CMakeFiles/Kruskal.dir/disjointsets.c.obj" \
 "CMakeFiles/Kruskal.dir/qsort.c.obj" \
 "CMakeFiles/Kruskal.dir/kruskal.c.obj"
@@ -133,7 +119,6 @@ Kruskal_OBJECTS = \
 Kruskal_EXTERNAL_OBJECTS =
 
 Kruskal.exe: CMakeFiles/Kruskal.dir/main.c.obj
-Kruskal.exe: CMakeFiles/Kruskal.dir/graph.c.obj
 Kruskal.exe: CMakeFiles/Kruskal.dir/disjointsets.c.obj
 Kruskal.exe: CMakeFiles/Kruskal.dir/qsort.c.obj
 Kruskal.exe: CMakeFiles/Kruskal.dir/kruskal.c.obj
@@ -141,7 +126,7 @@ Kruskal.exe: CMakeFiles/Kruskal.dir/build.make
 Kruskal.exe: CMakeFiles/Kruskal.dir/linklibs.rsp
 Kruskal.exe: CMakeFiles/Kruskal.dir/objects1.rsp
 Kruskal.exe: CMakeFiles/Kruskal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Kruskal.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\CLionProjects\Kruskal(m-michurov)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Kruskal.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Kruskal.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

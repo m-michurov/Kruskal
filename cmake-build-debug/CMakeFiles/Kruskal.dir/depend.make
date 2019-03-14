@@ -5,11 +5,6 @@ CMakeFiles/Kruskal.dir/disjointsets.c.obj: ../disjointsets.c
 CMakeFiles/Kruskal.dir/disjointsets.c.obj: ../disjointsets.h
 CMakeFiles/Kruskal.dir/disjointsets.c.obj: ../errors.h
 
-CMakeFiles/Kruskal.dir/graph.c.obj: ../disjointsets.h
-CMakeFiles/Kruskal.dir/graph.c.obj: ../errors.h
-CMakeFiles/Kruskal.dir/graph.c.obj: ../graph.c
-CMakeFiles/Kruskal.dir/graph.c.obj: ../graph.h
-
 CMakeFiles/Kruskal.dir/kruskal.c.obj: ../disjointsets.h
 CMakeFiles/Kruskal.dir/kruskal.c.obj: ../errors.h
 CMakeFiles/Kruskal.dir/kruskal.c.obj: ../graph.h

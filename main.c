@@ -34,12 +34,13 @@ int main(
         if (!(length >= 0 && length <= INT_MAX)) LEN_INPUT_ERROR;
 
         edge_array[k].dst = (short)dst;
-        edge_array[k].length = length;
         edge_array[k].src = (short)src;
+        edge_array[k].length = length;
+        edge_array[k].colour = WHITE;
     }
 
 
-    LeaveOnlyMinSpanningTree(edge_array, (size_t) vertices, (size_t) edges);
+    MarkMinSpanningTree(edge_array, (size_t) vertices, (size_t) edges);
 
 
     for (size_t k = 0; k < edges; k++) {

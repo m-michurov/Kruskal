@@ -83,9 +83,6 @@
 		<Unit filename="C:/CLionProjects/Kruskal(m-michurov)/errors.h">
 			<Option target="Kruskal"/>
 		</Unit>
-		<Unit filename="C:/CLionProjects/Kruskal(m-michurov)/graph.c">
-			<Option target="Kruskal"/>
-		</Unit>
 		<Unit filename="C:/CLionProjects/Kruskal(m-michurov)/graph.h">
 			<Option target="Kruskal"/>
 		</Unit>

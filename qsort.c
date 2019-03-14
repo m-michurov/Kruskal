@@ -1,6 +1,6 @@
 #include "qsort.h"
 
-
+// a buffer to temporarily store structure when swapping array elements
 static Edge buff;
 
 void QuickSort(

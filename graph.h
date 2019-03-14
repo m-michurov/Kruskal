@@ -20,10 +20,4 @@ typedef struct {
     short dst;
 } Edge;
 
-
-Edge * newEdge(
-        short src,
-        short dst,
-        int length);
-
 #endif

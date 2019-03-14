@@ -149,33 +149,6 @@ disjointsets.c.s:
 	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/disjointsets.c.s
 .PHONY : disjointsets.c.s
 
-graph.obj: graph.c.obj
-
-.PHONY : graph.obj
-
-# target to build an object file
-graph.c.obj:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/graph.c.obj
-.PHONY : graph.c.obj
-
-graph.i: graph.c.i
-
-.PHONY : graph.i
-
-# target to preprocess a source file
-graph.c.i:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/graph.c.i
-.PHONY : graph.c.i
-
-graph.s: graph.c.s
-
-.PHONY : graph.s
-
-# target to generate assembly for a file
-graph.c.s:
-	$(MAKE) -f CMakeFiles\Kruskal.dir\build.make CMakeFiles/Kruskal.dir/graph.c.s
-.PHONY : graph.c.s
-
 kruskal.obj: kruskal.c.obj
 
 .PHONY : kruskal.obj
@@ -269,9 +242,6 @@ help:
 	@echo ... disjointsets.obj
 	@echo ... disjointsets.i
 	@echo ... disjointsets.s
-	@echo ... graph.obj
-	@echo ... graph.i
-	@echo ... graph.s
 	@echo ... kruskal.obj
 	@echo ... kruskal.i
 	@echo ... kruskal.s
