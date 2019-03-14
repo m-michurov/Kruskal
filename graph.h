@@ -8,16 +8,19 @@
 
 
 typedef enum {
-    WHITE,
-    BLACK
+    BLACK,
+    WHITE
 } Colour;
 
 
 typedef struct {
     int length;
+
     Colour colour;
+
     short src;
     short dst;
 } Edge;
+
 
 #endif

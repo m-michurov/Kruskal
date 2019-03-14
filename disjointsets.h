@@ -9,8 +9,8 @@
 
 
 typedef struct {
-    int * parent;
-    int * rank;
+    size_t * parent;
+    size_t * rank;
 } DSU;
 
 
@@ -18,18 +18,19 @@ DSU * MakeSets(
         size_t count);
 
 
-int FindSet(
+size_t FindSet(
         DSU * dsu,
-        int element);
+        size_t element);
 
 
 void MergeSets(
         DSU * dsu,
-        int setX,
-        int setY);
+        size_t setX,
+        size_t setY);
 
 
 void DestroySets(
         DSU * dsu);
+
 
 #endif

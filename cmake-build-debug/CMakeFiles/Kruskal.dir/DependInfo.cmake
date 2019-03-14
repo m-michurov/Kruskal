@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/CLionProjects/Kruskal(m-michurov)/disjointsets.c" "C:/CLionProjects/Kruskal(m-michurov)/cmake-build-debug/CMakeFiles/Kruskal.dir/disjointsets.c.obj"
-  "C:/CLionProjects/Kruskal(m-michurov)/kruskal.c" "C:/CLionProjects/Kruskal(m-michurov)/cmake-build-debug/CMakeFiles/Kruskal.dir/kruskal.c.obj"
-  "C:/CLionProjects/Kruskal(m-michurov)/main.c" "C:/CLionProjects/Kruskal(m-michurov)/cmake-build-debug/CMakeFiles/Kruskal.dir/main.c.obj"
-  "C:/CLionProjects/Kruskal(m-michurov)/qsort.c" "C:/CLionProjects/Kruskal(m-michurov)/cmake-build-debug/CMakeFiles/Kruskal.dir/qsort.c.obj"
+  "E:/CLionProjects/Kruskal/disjointsets.c" "E:/CLionProjects/Kruskal/cmake-build-debug/CMakeFiles/Kruskal.dir/disjointsets.c.obj"
+  "E:/CLionProjects/Kruskal/kruskal.c" "E:/CLionProjects/Kruskal/cmake-build-debug/CMakeFiles/Kruskal.dir/kruskal.c.obj"
+  "E:/CLionProjects/Kruskal/main.c" "E:/CLionProjects/Kruskal/cmake-build-debug/CMakeFiles/Kruskal.dir/main.c.obj"
+  "E:/CLionProjects/Kruskal/qsort.c" "E:/CLionProjects/Kruskal/cmake-build-debug/CMakeFiles/Kruskal.dir/qsort.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

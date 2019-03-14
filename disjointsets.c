@@ -4,25 +4,25 @@
 DSU * MakeSets(
         const size_t count)
 {
-    DSU * dsu = (DSU *)malloc(sizeof(DSU));
+    DSU * dsu = (DSU *) malloc(sizeof(DSU));
     MEM_CHECK(dsu)
 
-    dsu->parent = (int *)calloc(count, sizeof(int));
+    dsu->parent = (size_t *) calloc(count, sizeof(size_t));
     MEM_CHECK(dsu->parent)
 
-    for (int element = 0; element < count; element++)
+    for (size_t element = 0; element < count; element++)
         dsu->parent[element] = element;
 
-    dsu->rank = (int *)calloc(count, sizeof(int));
+    dsu->rank = (size_t *) calloc(count, sizeof(size_t));
     MEM_CHECK(dsu->rank)
 
     return dsu;
 }
 
 
-int FindSet(
+size_t FindSet(
         DSU * dsu,
-        const int element)
+        const size_t element)
 {
     if (element == dsu->parent[element])
         return element;
@@ -35,8 +35,8 @@ int FindSet(
 
 void MergeSets(
         DSU * dsu,
-        const int setX,
-        const int setY)
+        const size_t setX,
+        const size_t setY)
 {
     if (dsu->parent[setX] != setX || dsu->parent[setY] != setY) PARAMETERS_ERROR
 

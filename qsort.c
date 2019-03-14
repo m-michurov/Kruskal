@@ -1,17 +1,17 @@
 #include "qsort.h"
 
-// a buffer to temporarily store structure when swapping array elements
-static Edge buff;
 
 void QuickSort(
         Edge * array,
         const int left,
         const int right)
 {
-    if (left < right) {
+    Edge buff;
 
-        int i = left,
-            j = right;
+    int i = left;
+    int j = right;
+
+    if (left < right) {
 
         int pivot = array[(left + right) / 2].length;
 
@@ -36,6 +36,5 @@ void QuickSort(
             QuickSort(array, i, right);
         if (j > left)
             QuickSort(array, left, j);
-
     }
 }

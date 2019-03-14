@@ -2,9 +2,9 @@
 
 
 void MarkMinSpanningTree(
-        Edge *edge_array,
-        size_t vertices,
-        size_t edges)
+        Edge * edge_array,
+        const size_t vertices,
+        const size_t edges)
 {
     size_t merge_count = 0;
 
@@ -25,8 +25,7 @@ void MarkMinSpanningTree(
         if (src_set != dst_set) {
             MergeSets(set_union, src_set, dst_set);
             merge_count++;
-        } else {
-            edge_array[k].colour = BLACK;
+            edge_array[k].colour = WHITE;
         }
     }
 
