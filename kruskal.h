@@ -10,7 +10,7 @@
 // the array, frees memory
 // and leaves NULL pointers instead.
 void LeaveOnlyMinSpanningTree(
-        Edge ** edge_array,
+        Edge * edge_array,
         size_t vertices,
         size_t edges);
 

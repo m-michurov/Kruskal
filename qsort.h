@@ -9,7 +9,7 @@
 
 
 void QuickSort(
-        Edge **array,
+        Edge * array,
         int left,
         int right);
 

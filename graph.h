@@ -6,11 +6,18 @@
 #include "errors.h"
 #include "disjointsets.h"
 
+
+typedef enum {
+    WHITE,
+    BLACK
+} Colour;
+
+
 typedef struct {
+    int length;
+    Colour colour;
     short src;
     short dst;
-
-    int length;
 } Edge;
 
 

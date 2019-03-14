@@ -1,31 +1,31 @@
 #include "qsort.h"
 
 
+static Edge buff;
+
 void QuickSort(
-        Edge ** array,
+        Edge * array,
         const int left,
         const int right)
 {
-    Edge * tmp;
-
     if (left < right) {
 
         int i = left,
             j = right;
 
-        int pivot = array[(left + right) / 2]->length;
+        int pivot = array[(left + right) / 2].length;
 
         do {
-            while (array[i]->length < pivot)
+            while (array[i].length < pivot)
                 i++;
 
-            while (array[j]->length > pivot)
+            while (array[j].length > pivot)
                 j--;
 
             if (i <= j) {
-                tmp = array[i];
+                buff = array[i];
                 array[i] = array[j];
-                array[j] = tmp;
+                array[j] = buff;
 
                 i++;
                 j--;

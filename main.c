@@ -14,7 +14,7 @@ int main(
     int dst = 0;
     int length = 0;
 
-    Edge ** edge_array;
+    Edge * edge_array;
 
     if (scanf("%d", &vertices) == EOF) LINE_NUM_ERROR;
     if (scanf("%d", &edges) == EOF) LINE_NUM_ERROR;
@@ -23,7 +23,7 @@ int main(
     if (!(edges >= 0 && edges <= (vertices - 1) * vertices / 2)) EDGE_NUM_ERROR;
 
 
-    edge_array = (Edge **)calloc((size_t)edges, sizeof(Edge *));
+    edge_array = (Edge *)calloc((size_t)edges, sizeof(Edge));
     MEM_CHECK(edge_array)
 
 
@@ -33,7 +33,9 @@ int main(
         if (!(src > 0 && src < vertices + 1) || !(dst > 0 && dst < vertices + 1)) VERTEX_INPUT_ERROR;
         if (!(length >= 0 && length <= INT_MAX)) LEN_INPUT_ERROR;
 
-        edge_array[k] = newEdge((short)src, (short)dst, length);
+        edge_array[k].dst = (short)dst;
+        edge_array[k].length = length;
+        edge_array[k].src = (short)src;
     }
 
 
@@ -41,9 +43,8 @@ int main(
 
 
     for (size_t k = 0; k < edges; k++) {
-        if (edge_array[k] != NULL)
-            printf("%d %d\n", edge_array[k]->src, edge_array[k]->dst);
-        free(edge_array[k]);
+        if (edge_array[k].colour != BLACK)
+            printf("%d %d\n", edge_array[k].src, edge_array[k].dst);
     }
 
     free(edge_array);
