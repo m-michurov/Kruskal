@@ -41,7 +41,7 @@ int main(
     }
 
 
-    MarkMinSpanningTree(edge_array, (size_t) vertices, (size_t) edges);
+    MarkMST(edge_array, (size_t) vertices, (size_t) edges);
 
 
     for (size_t k = 0; k < edges; k++)

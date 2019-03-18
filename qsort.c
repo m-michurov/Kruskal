@@ -6,7 +6,7 @@ void QuickSort(
         const int left,
         const int right)
 {
-    Edge buff;
+    static Edge buff;
 
     int i = left;
     int j = right;

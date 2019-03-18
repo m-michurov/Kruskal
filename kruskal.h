@@ -6,8 +6,8 @@
 #include "qsort.h"
 
 
-void MarkMinSpanningTree(
-        Edge *edge_array,
+void MarkMST(
+        Edge * edge_array,
         size_t vertices,
         size_t edges);
 

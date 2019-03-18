@@ -16,10 +16,10 @@ typedef enum {
 typedef struct {
     int length;
 
-    Colour colour;
-
     short src;
     short dst;
+
+    Colour colour;
 } Edge;
 
 
