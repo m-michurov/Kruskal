@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/Kruskal/disjointsets.c
+disjointsets.h
+E:/CLionProjects/Kruskal/disjointsets.h
+
+E:/CLionProjects/Kruskal/disjointsets.h
+stdlib.h
+-
+errors.h
+E:/CLionProjects/Kruskal/errors.h
+
+E:/CLionProjects/Kruskal/errors.h
+stdio.h
+-
+stdlib.h
+-
+
